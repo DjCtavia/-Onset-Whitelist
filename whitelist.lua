@@ -20,7 +20,6 @@ function isOnWhitelist(file, player)
         end
         return false
     end
-    print("["..GetPackageName().."] type of steamId64: ".. type(steamdId64))
     for steamId64ToVerify in io.lines(file) do
         if steamId64ToVerify == steamdId64 then
             return true
